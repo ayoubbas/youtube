@@ -3,7 +3,8 @@ name: My Selenium 2
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'  # Chạy mỗi 3 giờ
+    #- cron: '0 */6 * * *'  # Chạy mỗi 3 giờ
+    - cron: '0 3,9,15,21 * * *'
 
 jobs:
   youtube_bot:
@@ -11,27 +12,27 @@ jobs:
     strategy:
       matrix:
         email:
-        # 27/2 7day
-          - 'vuynhiq9n5ncxax0bk@rotitk.us'
-          - 'hanbanmai871xwthmn7ea@rotitk.us'
-          - 'damanhduyb29nyrhjftqy@rotitk.us'
-          - 'duongkhuetruc8733oukz9wmd@rotitk.us'
-          - 'vutanlong4m48k8ufrlb1@rotitk.us'
-          - 'tolongquan3frty0aoevam@rotitk.us'
-          - 'nguyentrongdunguig6ounr42wc@rotitk.us'
-          - 'nguyenthithuthuy96ojfrtnhrjd@rotitk.us'
-          - 'luchuucuong0vniwrqogxet@rotitk.us'
-          - 'nguyenthihoaka4iwqdbpbgs@rotitk.us'
-          - 'trangthuynganvvyn9gwhpl62@rotitk.us'
-          - 'phamhaivy358wu37ld5gw@rotitk.us'
-          - 'buingochienx7cp4c3zpbdj@rotitk.us'
-          - 'vubichhaiju78ulaxav5m@rotitk.us'
-          - 'nguyenthidieuhang2bzkcoad3rrf@rotitk.us'
-          - 'lenhatquangmvf8hgwsovn8@rotitk.us'
-          - 'lethingocdiemeq3iik7csck6@rotitk.us'
-          - 'nguyenminhquocvsmkjdruz58z@rotitk.us'
-          - 'buiminhnhatuwez5bdiz038@rotitk.us'
-          - 'thaobaovan673s5kcduals@rotitk.us'
+        # 28/2 7day
+          - 'lyhuutanmswxhjn3dfd3@rotitk.us'
+          - 'vuongtamthiencta3hx5ftpwc@rotitk.us'
+          - 'tranthituyet1mthh90f273l@rotitk.us'
+          - 'banhmailienliubmb4igf17@rotitk.us'
+          - 'lelamtruongjoxo89qmxsc7@rotitk.us'
+          - 'nguyenthanhtinsdea2jqbvy9p@rotitk.us'
+          - 'thaobaochauoeyv2j6v7ytc@rotitk.us'
+          - 'nguyenlehonggainputuu0w05j7@rotitk.us'
+          - 'nghiemngocthienyydt8jhxv5qq@rotitk.us'
+          - 'nguyenthicamnhung3iixkeutfv0w@rotitk.us'
+          - 'vanmanhtuongn682aueavpp1@rotitk.us'
+          - 'tranmyngocvga3xeyo9ctq@rotitk.us'
+          - 'lamducphue1ar825qv1bu@rotitk.us'
+          - 'banhminhdatw51b2ucswlay@rotitk.us'
+          - 'doanquynhgiangivudbs97x7mh@rotitk.us'
+          - 'vothiennuongmc3s81euydy2@rotitk.us'
+          - 'trinhkimtuyetbtdkjnhjkhi9@rotitk.us'
+          - 'nguyenmaithaon733js9b4vzc@rotitk.us'
+          - 'duongtanthanh90v1cjdtkyzk@rotitk.us'
+          - 'hohuytuan3blifh7wuqme@rotitk.us'
         #email: ['nguyenthuhuonghpwr9uhh7501@rotitk.us', 'lemykieue93yotx2fj6f@rotitk.us', 'nguyenmongnhif74lkeeuz7dc@rotitk.us','mackimtuyenfbuyscf654ei@rotitk.us','nguyenbaolamrsf3t8fjfdih@dfphayy.us'] 
     runs-on: windows-latest  # Chạy trên hệ điều hành Windows
 
